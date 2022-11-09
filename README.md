@@ -2,17 +2,16 @@
 
 ![Decorative image.](Images/bitcoin4.png)
 
-Bit‐coin is the longest-running and most well-known cryptocurrency. A major drawback of cryptocurrency trading is the volatility of the market. Since cryptocurrency markets trade 24/7, tracking cryptocurrency positions against quickly changing market dynamics can rapidly become an impossible task to manage. This is where automated trading algorithms and trading bots can assist.
+Bit‐coin is the original and most repitable cryptocurrency in the world. One big flaw in cryptocurrency trading is the volatility of the crypto marketplace. Cyrptocurrencies trade on a 24 hour, 7 day a week clock, tracking cryptocurrency positions against rapidly changing market dynamics is an impossible task to manage. This is where automated trading algorithms and trading bots can assist.
 
 ## Background
 
-The problem with predicting a buy or sell signal for a trading strategy is defined within the classification framework, where the predicted variable has a value of 1 for buy and 0 for sell. This signal is decided through the comparison of the short-term and long-term price trends.
+Our goal is to predict the best market move with either a buy or sell signal. To do this we'll build a trading strategy with a defined classification framework, where the predicted variable has a value of 1 for buy and 0 for sell. This signal is determined by comparing the short-term and long-term price trends.
 
 We use data from the CBSE bitcoin exchange in terms of the volume-weighted average price (VWAP) which is a technical analysis indicator used on intraday charts that resets at the start of every new trading session. It's a trading benchmark that represents the average price a security has traded at throughout the day, based on both volume and price. VWAP is important because it provides traders with pricing insight into both the trend and value of a security. This data is pulled via an Alpaca API and the data covers prices from Oct 2016 to current day. Different trend and momentum indicators are created from the data and are added as features to enhance the performance of the prediction model.
 
 ## What We're Creating
-Machine learning has one key aspect called feature engineering. It means that we can create new, intuitive features and feed them to a machine learning algorithm in order to achieve better results. We can introduce different technical indicators as features to help predict future prices of an asset. These technical indicators are derived from market variables such as price or volume and have additional information or signals embedded in them. There are many different categories of technical indicators,
-including trend, volume, volatility, and momentum indicators.
+Machine learning's key aspect is called feature engineering. Feature engineering is when we create new, intuitive features based on our data and feed them to a machine learning algorithm in order to improve the predictions. We will introduce different technical indicators as features to help predict future prices, higher or lower than the current price, of an asset. Technical indicators are derived from market variables which in turn provide deeper insight into our buy and sell signals.  There are many different categories of technical indicators, including trend, volume, volatility, and momentum indicators.
 
 In this project, we use various classification based prediction models to predict whether the current position signal is buy or sell. We will create additional trend and momentum indicators from market prices to leverage as additional features in our prediction model.
 
@@ -184,28 +183,28 @@ Algo model recommendations for the past 24 hours.
 ### Our Conclusions (Part 1)
 One of the most significant steps in order to solve any problem, especially the hard and challenging ones, lies in finding a proper strategic approach and securing a complete understanding of the problem that we are trying to solve. A proper strategy approach should answer questions such as: should we have to predict prices, price movement direction, price trends, price spikes and so on.  
 
-Next, we apply data preprocessing and feature engineering strategies to demonstrate that feature engineering is an efficient method for the creation of intuitive features related to momentum and trend indicators of Bitcoin’s price movement and increases the predictive power of the model. 
+Next, we apply data preprocessing and feature engineering strategies and outline that feature engineering is an effective method for the creation of intuitive features related to momentum and trend indicators of Bitcoin’s price movement and increases the accuracy of our models predictions. 
 
 In terms of the evaluation metrics for a classification-based trading strategy, accuracy is appropriate. However, in case the strategy is focusing to be more accurate while going long, the metric recall that focuses on less false positives can be preferred as compared to accuracy. 
 
 Then we demonstrated our back testing framework which allowed us to simulate a crypto trading strategy by using historical data to generate results and analyze risk and profitability before risking any actual capital. 
 
-Finally, we print out a Buy or Sell slip covering the perious 24 hour period with 1 representing a BUY recommendation and a 0 representing a SELL recommendation.
+Finally, we print out a Buy or Sell slip covering the previous 24 hour period with 1 representing a BUY recommendation and a 0 representing a SELL recommendation.
 
 
 ### Optional: Dimensionality Reduction (Part 2)
 
-Dimenaionality reduction is used to allow end users to interpret large dataframes with complex information and relationships between that information into lower dimension datasets that still inherit the meaningful purpose of the larger more complex dataframe.  Dimensionality reduction is helpful with large datasets because the raw data is often missing lot of data points.  We are going to use dimensionality reduction to eliminate noise from our data and visualize the the data in a clustered format (our buy and sell signals). 
+Dimensionality reduction is used to allow end users to interpret large dataframes with complex information and relationships between that information into lower dimension datasets that still inherit the meaningful purpose of the larger more complex dataframe.  Dimensionality reduction is helpful with large datasets because the raw data is often missing lot of data points.  We are going to use dimensionality reduction to eliminate noise from our data and visualize the the data in a clustered format (our buy and sell signals). 
 
 #### Singular Value Decomposition (SVD) 
 
-SVD is a linear dimensionality reduction technique that reduces the number of input variables that are sent to the predictive model.  By reducing the number of input we hope that our model will in turn have better performance in terms of speed without reducing the accuracy of the predictions.  By reducing the number of inputs into the model we also eliminate data that may not truely be representitive of the full dataset.
+SVD is a linear dimensionality reduction technique that reduces the number of input variables that are sent to the predictive model.  By reducing the number of input we hope that our model will in turn have better performance in terms of speed without reducing the accuracy of the predictions.  By reducing the number of inputs into the model we also eliminate data that may not truely be representative of the full dataset.
 
-We start be determining the most important featuers of our model and find that the top five features of our model account for approximately 93% of the variance within our dataset.  
+We start be determining the most important features of our model and find that the top five features of our model account for approximately 93% of the variance within our dataset.  
 
 ![Decorative image.](Images/top5features.png)
 
-We then compare those top five featuers visually against each other with our buy/sell signals using pair plots.  By doing this we can see that even after our data has been reduced we have very clustered data which helps us confirm that the reduction in our model is still outputting similar information as the non reduced data. 
+We then compare those top five features visually against each other with our buy/sell signals using pair plots.  By doing this we can see that even after our data has been reduced we have very clustered data which helps us confirm that the reduction in our model is still outputting similar information as the non reduced data. 
 
 ![Decorative image.](Images/pairplots.png)
 
