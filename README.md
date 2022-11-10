@@ -110,12 +110,14 @@ Visualize different properties of the features and the predicted variable
 The chart illustrates a sharp rise in the price of bitcoin to a steep drop, increasing from under 1000 to a high of almost $70,000 at the end of 2021. Also, high price volatility is readily visible.
 
 ![Decorative image.](Images/image_9.png)
+
 The predicted variable signal shows us the amount of times a signal is either a BUY or SELL, the predicted variable is relatively balanced however.
 
 ![Decorative image.](Images/image_10.png)
 This histogram summarize discrete or continuous data that are measured on an interval scale. It is often used to illustrate the major features of the distribution of the data in a convenient form.
 
 ![Decorative image.](Images/image11.png)
+
 This correlation matrix is a table showing correlation coefficients between variables. Each cell in the table shows the correlation between two variables.
 
 #### Train Test Split our data
