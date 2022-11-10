@@ -172,11 +172,11 @@ Here we see the true positive, true negative, false positive and false negative 
 The result of the variable importance looks intuitive, and the momentum indicators of RSI, MOM and ROC over the last 30 days seem to be the three most important features. The feature importance chart corroborates the fact that introducing new features leads to an improvement in the model performance.
 
 ### Backtesting
-We perform a backtest on the model we’ve developed. We create a column for strategy returns by multiplying the daily returns by the position that was held at the close of business the previous day and compare it against the actual returns.
+We perform a backtest on the model we’ve developed by creating a column for our daily returns and multiplying it by the strategy returns in relation to the position that was held at the close of business the previous day and then we compare it to the the actual returns.
 
 ![Decorative image.](Images/image_21.png)
 
-Looking at the backtesting results, we do not deviate significantly from the actual market return. Indeed, the achieved momentum trading strategy made us better at predicting the price direction to buy or sell in order to make profits. We made relatively few losses compared to the actual returns.
+When we look at our backtesting results, we can see that there is not much deviation from the actual market return. we can conclude that our momentum trading strategy in fact made us better at predicting the price direction to either sell or buy in order to achieve profits. We also made only a few losses in comparison to the actual returns.
 
 ### Buy or Sell
 Algo model recommendations for the past 24 hours.
