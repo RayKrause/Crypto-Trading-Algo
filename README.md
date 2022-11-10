@@ -114,6 +114,7 @@ The chart illustrates a sharp rise in the price of bitcoin to a steep drop, incr
 The predicted variable signal shows us the amount of times a signal is either a BUY or SELL, the predicted variable is relatively balanced however.
 
 ![Decorative image.](Images/image_10.png)
+
 This histogram summarize discrete or continuous data that are measured on an interval scale. It is often used to illustrate the major features of the distribution of the data in a convenient form.
 
 ![Decorative image.](Images/image11.png)
