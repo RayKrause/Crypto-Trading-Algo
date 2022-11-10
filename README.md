@@ -38,7 +38,7 @@ This project will focus on:
 ![Decorative image.](Images/image6.png)
 
 #### Feature Engineering
-We begin feature engineering by analyzing the features we expect may influence the performance of the prediction model. Based on a conceptual understanding of key factors that drive investment strategies, the task at hand is to identify and construct new features that may capture the risks or characteristics embodied by these return drivers.
+Feature engineering is the ‘art’ of formulating useful features from existing data following the target to be learned and the machine learning model used. It involves transforming data to forms that better relate to the underlying target to be learned. We begin by analyzing the features that we expect may influence the performance of our prediction model. Based on a conceptual understanding of key factors that drive investment strategies, the task at hand is to identify and construct new features that may capture the risks or characteristics embodied by these return drivers.
 
 The current dataset of the bitcoin (BTC) consists of timestamp, open, high, low, close, volume, trade count and vwap. Using this data, we calculate the following momentum indicators.
 
@@ -106,15 +106,19 @@ A moving average provides an indication of the trend of the price movement by cu
 Visualize different properties of the features and the predicted variable
 
 ![Decorative image.](Images/image8.png)
+
 The chart illustrates a sharp rise in the price of bitcoin to a steep drop, increasing from under 1000 to a high of almost $70,000 at the end of 2021. Also, high price volatility is readily visible.
 
 ![Decorative image.](Images/image_9.png)
+
 The predicted variable signal shows us the amount of times a signal is either a BUY or SELL, the predicted variable is relatively balanced however.
 
 ![Decorative image.](Images/image_10.png)
+
 This histogram summarize discrete or continuous data that are measured on an interval scale. It is often used to illustrate the major features of the distribution of the data in a convenient form.
 
 ![Decorative image.](Images/image11.png)
+
 This correlation matrix is a table showing correlation coefficients between variables. Each cell in the table shows the correlation between two variables.
 
 #### Train Test Split our data
@@ -168,11 +172,11 @@ Here we see the true positive, true negative, false positive and false negative 
 The result of the variable importance looks intuitive, and the momentum indicators of RSI, MOM and ROC over the last 30 days seem to be the three most important features. The feature importance chart corroborates the fact that introducing new features leads to an improvement in the model performance.
 
 ### Backtesting
-We perform a backtest on the model we’ve developed. We create a column for strategy returns by multiplying the daily returns by the position that was held at the close of business the previous day and compare it against the actual returns.
+We perform a backtest on the model we’ve developed by creating a column for our daily returns and multiplying it by the strategy returns in relation to the position that was held at the close of business the previous day and then we compare it to the the actual returns.
 
 ![Decorative image.](Images/image_21.png)
 
-Looking at the backtesting results, we do not deviate significantly from the actual market return. Indeed, the achieved momentum trading strategy made us better at predicting the price direction to buy or sell in order to make profits. We made relatively few losses compared to the actual returns.
+When we look at our backtesting results, we can see that there is not much deviation from the actual market return. we can conclude that our momentum trading strategy in fact made us better at predicting the price direction to either sell or buy in order to achieve profits. We also made only a few losses in comparison to the actual returns.
 
 ### Buy or Sell
 Algo model recommendations for the past 24 hours.
