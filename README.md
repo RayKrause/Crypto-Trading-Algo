@@ -106,6 +106,7 @@ A moving average provides an indication of the trend of the price movement by cu
 Visualize different properties of the features and the predicted variable
 
 ![Decorative image.](Images/image8.png)
+
 The chart illustrates a sharp rise in the price of bitcoin to a steep drop, increasing from under 1000 to a high of almost $70,000 at the end of 2021. Also, high price volatility is readily visible.
 
 ![Decorative image.](Images/image_9.png)
