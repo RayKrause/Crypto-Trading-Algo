@@ -224,4 +224,4 @@ t-SNE is a nonlinear dimensionality reduction technique that is well suited to r
 
 #### Conclusion
 
-We found that by reducing our data through the SVD reduction model we were able reduce the processing time of our algorith by approximately 45% while only reducing the accuracy by around 4%.  Because the model is so much faster with the dimensionality reduction while only being slightly less accurate we determined it would be best to use the reduced dataset when running our model moving forward as when making trades in this type of environment with bots speed is extremely important.  
+We found that by reducing our data through the SVD reduction model we were able reduce the processing time of our algorith by approximately 45%, while only reducing the accuracy by around 4%.  Because the model is so much faster with the dimensionality reduction while only being slightly less accurate, we determined it would be best to use the reduced dataset when running our model moving forward as when making trades in this type of environment with bots speed is extremely important.  
